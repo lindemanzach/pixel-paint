@@ -20,7 +20,6 @@
         <div id="links">
             <a href="#">Help</a>
             <a href="#">About</a>
-            <a href="#">Link 1</a>
         </div>
     </div>
 
@@ -55,6 +54,49 @@
             <div class="icons"><img src="images/text.png"></div>
             <div class="icons"><img src="images/wand.png"></div>
         </div>
+    </div>
+
+    <!-- Canvas-->
+    <div id="canvas-container">
+        <div id="side-bar-left">
+
+            <div id="minimize" class="btn-solid">
+                -
+            </div>
+
+            <div id="two-colour">
+                <div class="two-colour"></div>
+                <div class="two-colour"></div>
+            </div>
+            <button class="side-bar-button btn-outline">Toggle Grid</button>
+            <button class="side-bar-button btn-outline">Export</button>
+            <button class="side-bar-button btn-outline">Export</button>
+        
+            <div id="draw-size">
+                <div id="small"></div>
+                <div id="medium"></div>
+                <div id="large"></div>
+                <div id="extra-large"></div>
+            </div>
+
+            <button class="side-bar-button btn-solid">Undo</button>
+
+            <div class="grid-slider">
+                <input type="range" min="1" max="100" value="50" class="slider" id="grid-slider">
+                <div id="grid-slider-text">
+                    24 x 24
+                </div>
+            </div>
+
+            <button class="side-bar-button btn-solid">Create New Grid</button>
+            <button class="side-bar-button btn-solid">Clear</button>
+
+
+        </div>
+        <div id="canvas">
+
+        </div>
+        <div id="side-bar-right"></div>
     </div>
     
 </body>
