@@ -1,0 +1,83 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #00649c;
+}
+
+#logo {
+    font-family: VT323, sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color: white;
+}
+
+#links > a {
+    color: white;
+    text-decoration: none;;
+}
+
+#links {
+    display: flex;
+    gap: 20px;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+#tool-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #E0E0E0;
+    padding: 4px;
+}
+
+.icons {
+    gap: 13px;
+    width: 30px;
+    height: 30px;
+}
+
+#icon-container {
+    display: flex;
+    gap: 20px;
+}
+
+.outer-selector {
+    padding: 12px;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-selector {
+    background-color: white;
+    min-width: 30px;
+    min-height: 30px;
+    border: 2px solid black;
+}
+
+#quick-paint {
+    display: flex;
+    gap: 1px;
+}
+
+#main {
+    display: flex;
+}
+
+.stupid {
+    display: grid;
+    place-items: center;
+}

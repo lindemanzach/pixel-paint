@@ -1,0 +1,18 @@
+Checklist
+
+Have two colors at a time (primary and secondary mouse click)
+
+Erase
+Undo
+Pen Size (different brushes?)
+Fill
+Change Grid Size
+Toggle Grid Lines
+Clear
+Select tool
+color picker
+
+
+Could do a different brush that paints the selected Grid
+square with the color the user picked, and squares all
+around that are the color but more opaque
