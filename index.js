@@ -2,21 +2,36 @@ let userTool = "pencil";
 let userPaintColor = ""
 let gridToggle = false;
 
-function makeGrid (pixelAmount) {
+function createGrid () {
+
+    const PIXEL_AMOUNT = document.getElementById("grid-slider").value;
+
     const CANVAS = document.getElementById("canvas");
+
+    const GRID_SLIDER_TEXT = document.getElementById("grid-slider-text");
+
+    CANVAS.innerHTML = "";
     
-    for (let i = 0; i < pixelAmount * pixelAmount; i++) {
-        CANVAS.innerHTML += `<div class="grid"></div>`; 
+    if (gridToggle) {
+        for (let i = 0; i < PIXEL_AMOUNT  * PIXEL_AMOUNT ; i++) {
+            CANVAS.innerHTML += `<div class="grid outline"></div>`; 
+        }
+    } else {
+        for (let i = 0; i < PIXEL_AMOUNT  * PIXEL_AMOUNT ; i++) {
+            CANVAS.innerHTML += `<div class="grid"></div>`; 
+        }
     }
 
-    CANVAS.style.gridTemplateColumns = `repeat(${pixelAmount}, 1fr)`;
-    CANVAS.style.gridTemplateRows = `repeat(${pixelAmount}, 1fr)`;
-
+    CANVAS.style.gridTemplateColumns = `repeat(${PIXEL_AMOUNT}, 1fr)`;
+    CANVAS.style.gridTemplateRows = `repeat(${PIXEL_AMOUNT}, 1fr)`;
+    GRID_SLIDER_TEXT.innerHTML = `${PIXEL_AMOUNT} x ${PIXEL_AMOUNT}`;
 }
+
 
 function undo() {
 
 }
+
 
 function toggleGrid () {
 
@@ -42,4 +57,4 @@ function toggleGrid () {
     }
 }
 
-makeGrid(10);
+createGrid();
