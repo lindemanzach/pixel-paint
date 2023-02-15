@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixel Paint</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 </head>
@@ -28,73 +28,74 @@
     <div id="tool-bar">
         <div id="quick-paint">
             <div class="outer-selector">
-                <div class="inner-selector"></div>
+                <div class="inner-selector">
+                    <input type="color">
+                </div>
             </div>
             <div class="outer-selector">
-                <div class="inner-selector"></div>
+                <div class="inner-selector">
+                    <input type="color">
+                </div>
             </div>
             <div class="outer-selector">
-                <div class="inner-selector"></div>
+                <div class="inner-selector">
+                    <input type="color">
+                </div>
             </div>
             <div class="outer-selector">
-                <div class="inner-selector"></div>
+                <div class="inner-selector">
+                    <input type="color">
+                </div>
             </div>
             <div class="outer-selector">
-                <div class="inner-selector"></div>
+                <div class="inner-selector">
+                    <input type="color">
+                </div>
             </div>
         </div>
         <div id="icon-container">
-            <div class="icons"><img src="images/movetool.png"></div>
-            <div class="icons"><img src="images/color-picker.png"></div>
-            <div class="icons"><img src="images/eraser.png"></div>
-            <div class="icons"><img src="images/pencil.png"></div>
-            <div class="icons"><img src="images/paintbrush.png"></div>
-            <div class="icons"><img src="images/paintbucket.png"></div>
-            <div class="icons"><img src="images/recolour.png"></div>
-            <div class="icons"><img src="images/text.png"></div>
-            <div class="icons"><img src="images/wand.png"></div>
+            <div class="icons" id="move"><img src="images/movetool.png"></div>
+            <div class="icons" id="eyedrop"><img src="images/color-picker.png"></div>
+            <div class="icons" id="eraser"><img src="images/eraser.png"></div>
+            <div class="icons" id="pencil"><img src="images/pencil.png"></div>
+            <div class="icons" id="paint"><img src="images/paintbrush.png"></div>
+            <div class="icons" id="paint-bucket"><img src="images/paintbucket.png"></div>
+            <div class="icons" id="color-swap"><img src="images/recolour.png"></div>
+            <div class="icons" id="text"><img src="images/text.png"></div>
+            <div class="icons" id="wand"><img src="images/wand.png"></div>
         </div>
     </div>
 
     <!-- Canvas-->
     <div id="canvas-container">
         <div id="side-bar-left">
-
             <div id="minimize" class="btn-solid">
                 -
             </div>
-
             <div id="two-colour">
                 <div class="two-colour"></div>
                 <div class="two-colour"></div>
             </div>
-            <button class="side-bar-button btn-outline">Toggle Grid</button>
+            <button onclick="toggleGrid()" class="side-bar-button btn-outline" id="toggle-grid">Toggle Grid</button>
             <button class="side-bar-button btn-outline">Export</button>
             <button class="side-bar-button btn-outline">Export</button>
-        
             <div id="draw-size">
                 <div id="small"></div>
                 <div id="medium"></div>
                 <div id="large"></div>
                 <div id="extra-large"></div>
             </div>
-
             <button class="side-bar-button btn-solid">Undo</button>
-
             <div class="grid-slider">
                 <input type="range" min="1" max="100" value="50" class="slider" id="grid-slider">
                 <div id="grid-slider-text">
                     24 x 24
                 </div>
             </div>
-
             <button class="side-bar-button btn-solid">Create New Grid</button>
             <button class="side-bar-button btn-solid">Clear</button>
-
-
         </div>
         <div id="canvas">
-
         </div>
         <div id="side-bar-right"></div>
     </div>

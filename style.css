@@ -71,13 +71,6 @@ body {
     background-color: white;
 }
 
-.inner-selector {
-    background-color: white;
-    min-width: 30px;
-    min-height: 30px;
-    border: 2px solid black;
-}
-
 #quick-paint {
     display: flex;
     gap: 1px;
@@ -101,10 +94,10 @@ body {
     background-color: grey;
     min-height: 60vh;
     min-width: 600px;
-
+    border: 3px solid black;
 }
 
-.grid {
+.outline {
     border: 2px solid red;
 }
 
@@ -137,9 +130,7 @@ body {
 .side-bar-button {
     margin: 10px 0px;
     border-radius: 4px;
-    
     padding: 5px;
-    
     font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -209,7 +200,6 @@ body {
 #medium {
     min-width: 15px;
     min-height: 15px;
-
 }
 
 #large {
@@ -220,4 +210,13 @@ body {
 #extra-large{
     min-width: 25px;
     min-height: 25px;
+}
+
+input[type="color"] {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    min-width: 50px;
+    min-height: 50px;
+    background-color: #E0E0E0;
 }
